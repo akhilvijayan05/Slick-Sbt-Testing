@@ -5,8 +5,10 @@ package com.example
   */
 
 //import slick.jdbc.{JdbcProfile, MySQLProfile, PostgresProfile}
-import slick.driver.{JdbcProfile, MySQLDriver, PostgresDriver}
-import slick.jdbc.PostgresProfile
+import java.util.UUID
+
+import slick.driver.JdbcProfile
+import slick.jdbc.{H2Profile, PostgresProfile}
 
 trait  DBComponent {
 
@@ -17,21 +19,5 @@ trait  DBComponent {
   val db: Database
 
 }
-trait MySqlDBComponent extends DBComponent {
 
-  val driver = MySQLDriver
 
-  import driver.api._
-
-  val db: Database=Database.forConfig("mySqlDB")
-
-}
-trait PostgresComponent extends DBComponent {
-
-  val driver = PostgresProfile
-
-  import driver.api._
-
-  val db = Database.forConfig("myPostgresDB")
-
-}

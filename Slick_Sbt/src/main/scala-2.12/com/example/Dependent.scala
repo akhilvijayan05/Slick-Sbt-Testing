@@ -7,7 +7,7 @@ package com.example
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
 
-trait DependentTable extends EmployeeTable with MySqlDBComponent{
+trait DependentTable extends EmployeeTable{
 
   this:DBComponent =>
   import driver.api._
@@ -27,7 +27,7 @@ trait DependentTable extends EmployeeTable with MySqlDBComponent{
 case class Dependent(emp_id:Int, name: String,relation:String,age:Option[Int])
 
 
-object DependentComponent extends DependentTable with MySqlDBComponent {
+trait DependentComponent extends DependentTable {
   this: DBComponent =>
 
   import driver.api._
@@ -73,4 +73,33 @@ def updateRelation(id: Int, relation: String): Future[Int] = {
       val action = dependentTableQuery.delete
       db.run(action)
   }
+  def crossJoin: Future[List[(String, String)]] = {
+    val query = for {
+      (e, d) <- employeeTableQuery join dependentTableQuery
+    } yield (e.name, d.name)
+    db.run(query.to[List].result)
+  }
+
+  def innerJoin: Future[List[(String, String)]] = {
+    val query = for {
+      (e, d) <- employeeTableQuery join dependentTableQuery on(_.id === _.emp_id)
+    } yield (e.name, d.name)
+    db.run(query.to[List].result)
+  }
+
+  def leftOuterJoin: Future[List[(String, Option[Option[Int]])]] = {
+    val query = for {
+      (e, d) <- employeeTableQuery joinLeft dependentTableQuery on(_.id === _.emp_id)
+    } yield (e.name, d.map(_.age))
+    db.run(query.to[List].result)
+  }
+
+  def fullJoin = {
+    val query = for {
+      (e, d) <- employeeTableQuery joinFull dependentTableQuery on (_.id === _.emp_id)
+    } yield (e.flatMap(_.name), d.map(_.age))
+    db.run(query.to[List].result)
+  }
 }
+
+object DependentComponent extends DependentComponent with MySqlDBComponent
