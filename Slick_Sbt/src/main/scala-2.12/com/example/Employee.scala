@@ -67,4 +67,4 @@ def updateExperience(id:Int, experience:Double) : Future[Int] = {
   }
 }
 
-object EmployeeRepo1 extends EmployeeRepo with H2DBComponent
+object EmployeeRepo extends EmployeeRepo with MySqlDBComponent

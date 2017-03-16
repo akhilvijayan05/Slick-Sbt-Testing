@@ -99,4 +99,4 @@ def updateRelation(id: Int, relation: String): Future[Int] = {
   }
 }
 
-object DependentComponent extends DependentComponent with H2DBComponent
+object DependentComponent extends DependentComponent with MySqlDBComponent

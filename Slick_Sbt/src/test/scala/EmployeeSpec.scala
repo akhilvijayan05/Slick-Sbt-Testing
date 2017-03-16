@@ -1,4 +1,4 @@
-import com.example.{Dependent, Employee, EmployeeRepo1}
+import com.example._
 import org.scalatest.AsyncFunSuite
 
 /**
@@ -6,19 +6,20 @@ import org.scalatest.AsyncFunSuite
   */
 class EmployeeSpec extends AsyncFunSuite{
 
+  object testing extends EmployeeRepo with H2DBComponent
   test("Add new Employee ") {
-    EmployeeRepo1.insert(Employee(17, "akhil", 32)).map( x =>assert(x == 1))
+    testing.insert(Employee(17, "akhil", 32)).map( x =>assert(x == 1))
   }
 
   test("update Employee record ") {
-    EmployeeRepo1.updateName(16,"pankaj").map(x=>assert(x == 1))
+    testing.updateName(16,"pankaj").map(x=>assert(x == 1))
   }
 
   test("delete Employee by experience") {
-    EmployeeRepo1.delete(23).map(x=>assert(x == 0 ))
+    testing.delete(23).map(x=>assert(x == 0 ))
   }
 
   test("get all employees") {
-    EmployeeRepo1.getAll.map( x => assert( x.size == 3))
+    testing.getAll.map( x => assert( x.size == 3))
   }
 }
