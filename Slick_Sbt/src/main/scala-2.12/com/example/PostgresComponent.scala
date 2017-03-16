@@ -8,7 +8,7 @@ import slick.driver.PostgresDriver
   */
 trait PostgresComponent extends DBComponent {
 
-  val driver = PostgresDriver
+  val driver = PostgresProfile
 
   import driver.api._
 

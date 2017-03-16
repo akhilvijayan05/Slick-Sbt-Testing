@@ -8,7 +8,7 @@ import scala.concurrent.ExecutionContext.Implicits.global
 
 case class Employee(id: Int, name: String, experience: Double)
 
-trait EmployeeTable extends MySqlDBComponent{
+trait EmployeeTable {
 
   this:DBComponent =>
   import driver.api._
@@ -24,7 +24,7 @@ trait EmployeeTable extends MySqlDBComponent{
   val employeeTableQuery = TableQuery[EmployeeTable]
 }
 
-object EmployeeRepo extends EmployeeTable with MySqlDBComponent{
+trait EmployeeRepo extends EmployeeTable {
 
   this:DBComponent =>
   import driver.api._
@@ -67,3 +67,4 @@ def updateExperience(id:Int, experience:Double) : Future[Int] = {
   }
 }
 
+object EmployeeRepo1 extends EmployeeRepo with H2DBComponent

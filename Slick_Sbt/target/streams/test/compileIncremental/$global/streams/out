@@ -1,36 +1,47 @@
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
 [0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	added: Set(/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala, /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/connection/H2DBComponent.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set(/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/EmployeeSpec.scala, /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala, /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/connection/H2DBComponent.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/EmployeeSpec.scala, /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] [0m
 [0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala, /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/connection/H2DBComponent.scala)[0m
-[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala, /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/connection/H2DBComponent.scala)[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/EmployeeSpec.scala, /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/EmployeeSpec.scala, /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala)[0m
 [0m[[0mdebug[0m] [0m[naha] Recompiling all 2 sources: invalidated sources (2) exceeded 50.0% of all sources[0m
 [0m[[0minfo[0m] [0mCompiling 2 Scala sources to /home/knoldus/Slick_Sbt/Slick_Sbt/target/scala-2.12/test-classes...[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.1[0m
 [0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.12.1[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 7a7235a5, interfacing (CompilerInterface) with Scala compiler version 2.12.1[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler c8cb8ca, interfacing (CompilerInterface) with Scala compiler version 2.12.1[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.1.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/home/knoldus/Slick_Sbt/Slick_Sbt/target/scala-2.12/test-classes:/home/knoldus/Slick_Sbt/Slick_Sbt/target/scala-2.12/classes:/home/knoldus/.ivy2/cache/com.typesafe.slick/slick_2.12/bundles/slick_2.12-3.2.0.jar:/home/knoldus/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/knoldus/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar:/home/knoldus/.ivy2/cache/com.typesafe.slick/slick-hikaricp_2.12/bundles/slick-hikaricp_2.12-3.2.0.jar:/home/knoldus/.ivy2/cache/com.zaxxer/HikariCP/bundles/HikariCP-2.5.1.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.21.jar:/home/knoldus/.ivy2/cache/org.postgresql/postgresql/bundles/postgresql-9.4.1212.jar:/home/knoldus/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.6.jar:/home/knoldus/.ivy2/cache/com.h2database/h2/jars/h2-1.4.193.jar:/home/knoldus/.ivy2/cache/org.scalatest/scalatest_2.12/bundles/scalatest_2.12-3.0.1.jar:/home/knoldus/.ivy2/cache/org.scalactic/scalactic_2.12/bundles/scalactic_2.12-3.0.1.jar:/home/knoldus/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.1.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.5.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.12/bundles/scala-parser-combinators_2.12-1.0.4.jar[0m
-[0m[[31merror[0m] [0m/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala:13: object testing inherits conflicting members:[0m
-[0m[[31merror[0m] [0m  value driver in trait MySqlDBComponent of type slick.jdbc.MySQLProfile.type  and[0m
-[0m[[31merror[0m] [0m  value driver in trait H2DBComponent of type slick.jdbc.H2Profile.type[0m
-[0m[[31merror[0m] [0m(Note: this can be resolved by declaring an override in object testing.);[0m
-[0m[[31merror[0m] [0m other members with override errors are: db[0m
-[0m[[31merror[0m] [0m  object testing extends DependentComponent with H2DBComponent[0m
-[0m[[31merror[0m] [0m         ^[0m
-[0m[[31merror[0m] [0mone error found[0m
-[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
-[0m[[31merror[0m] [0m(test:[31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0mdebug[0m] [0mScala compilation took 2.694544501 s[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/EmployeeSpec.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/EmployeeSpec.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/EmployeeSpec.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/EmployeeSpec.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/EmployeeSpec.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	executionContext, unconstrainedEquality, convertToEqualizer, convertAssertionToFutureAssertion.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /home/knoldus/Slick_Sbt/Slick_Sbt/src/test/scala/DependentSpec.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	executionContext, unconstrainedEquality, convertToEqualizer, convertAssertionToFutureAssertion.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Previously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m

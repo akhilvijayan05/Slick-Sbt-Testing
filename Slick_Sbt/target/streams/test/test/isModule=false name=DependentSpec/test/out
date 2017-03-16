@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0m[32mDependentSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Add new Employee [0m[0m
+[0m[[0minfo[0m] [0m[32m- update Employee record [0m[0m
+[0m[[0minfo[0m] [0m[32m- delete Employee [0m[0m
+[0m[[0minfo[0m] [0m[32m- get all employees[0m[0m
+[0m[[0minfo[0m] [0m[32m- Cross Join Dependent and Employee[0m[0m
+[0m[[0minfo[0m] [0m[32m- Inner Join Dependent and Employee[0m[0m
+[0m[[0minfo[0m] [0m[32m- Left Outer Join Dependent and Employee[0m[0m
+[0m[[0minfo[0m] [0m[32m- Full Join Dependent and Employee[0m[0m

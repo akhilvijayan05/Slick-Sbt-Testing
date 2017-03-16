@@ -7,7 +7,7 @@ import slick.jdbc.MySQLProfile
   */
 trait MySqlDBComponent extends DBComponent {
 
-  val driver = MySQLDriver
+  val driver = MySQLProfile
 
   import driver.api._
 

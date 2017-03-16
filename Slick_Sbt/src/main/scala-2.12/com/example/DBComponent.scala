@@ -7,7 +7,7 @@ package com.example
 //import slick.jdbc.{JdbcProfile, MySQLProfile, PostgresProfile}
 import java.util.UUID
 
-import slick.driver.JdbcProfile
+import slick.jdbc.JdbcProfile
 import slick.jdbc.{H2Profile, PostgresProfile}
 
 trait  DBComponent {

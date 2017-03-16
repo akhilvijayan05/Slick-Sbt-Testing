@@ -3,7 +3,6 @@ package com.example
 /**
   * Created by knoldus on 13/3/17.
   */
-
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
 
@@ -28,10 +27,8 @@ case class Dependent(emp_id:Int, name: String,relation:String,age:Option[Int])
 
 
 trait DependentComponent extends DependentTable {
-  this: DBComponent =>
-
-  import driver.api._
-
+  this:DBComponent=>
+import driver.api._
   def create = db.run(dependentTableQuery.schema.create)
 
   def insert(dependent: Dependent) = db.run(dependentTableQuery += dependent)
@@ -102,4 +99,4 @@ def updateRelation(id: Int, relation: String): Future[Int] = {
   }
 }
 
-object DependentComponent extends DependentComponent with MySqlDBComponent
+object DependentComponent extends DependentComponent with H2DBComponent
